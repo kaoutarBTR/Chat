@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authetification</title>
+     <!-- Lien vers le fichier CSS pour les styles -->
+    <link rel="stylesheet" href="authentification.css">
+    <link rel="shortcut icon" href="cr3.png">
+
+     <!-- Lien vers Font Awesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/4fc90babdb.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="container" id="login">
+
+    <!-- Conteneur principal -->
+    <div  >
+
+        <!-- Formulaire de connexion -->
+        <div class="form-box">
+
+             <!-- Titre du formulaire -->
+            <h1 id="title">Se connecter</h1>
+            <form action="/home" method="post" >
+
+                <div class="input-group">
+                      <!-- Champ pour le nom d'utilisateur -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-user" style="color: #B197FC;"></i>
+                        <input type="text" placeholder="Nom d'utilisateur" name="username" required minlength="4" maxlength="16">
+                    </div>
+                     <!-- Champ pour le mot de passe -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-key" style="color: #B197FC;"></i>
+                        <input type="password" placeholder="Mot de passe" name="password" required minlength="5" maxlength="25">
+                    </div>
+                   
+                </div>
+
+                 <!-- Boutons d'action -->
+                <div class="btn-field" >
+                    <!-- Bouton pour créer un compte -->
+                    <button type="button" id="creerCompte">Créer un compte</button>
+                    <!-- Bouton pour se connecter -->
+                    <button type="button" id="Connection" class="disable">Se connecter</button>
+
+                    <button type="submit" id="allez" ><i class="fa-solid fa-door-open" style="color: #e0d7f9;"></i></button>
+                </div>
+
+            </form> 
+
+        </div>
+
+    </div>
+      <!-- Script JavaScript pour la fonctionnalité de basculement -->
+    <script src="login.js"> </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+   <div class ="app">
+    <h1 class ="chatTitle">Bienvenue sur le chat </h1>
+
+<!-- Dans test.ejs -->
+<div>
+    Contenu de la variable : <%= locals.myVariable %>
+</div>
+
+    <div class= "container">
+        <div class="chanelList"></div>
+        <h1>liste des channels</h1>
+
+    </div>
+
+    <div class="msgContainer" id="msgContainer">
+
+    </div>
+
+    <div id="isWriting"></div>
+    <form method="Post" id="chatForm">
+        <input type="text" id="msgInput" autofocus onkeypress="writing()" onblur="notWriting()" >
+        <input type="submit" id="btnSend" value="Envoyer">
+
+    </form>
+
+</div>
+<script>
+    var test = '<%= locals.myVariable %>';
+</script>
+
+
+     <script src="chat.js"></script>
+
+</body>
+
+</html>

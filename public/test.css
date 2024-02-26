@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+  body {
+    height: 100vh;
+   
+    
+      
+  
+
+  }
+  
+  .image-container {
+    width:100%; /* Set width */
+    height:100%; /* Set height */
+    background-image: url(mnt.jpg); /* Specify path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    position: fixed;
+    top: 0; /* Position from top */
+    left: 0;
+    z-index: -1;
+}
+
+.action-btn{
+    background-color:rgb(221, 140, 143);
+    color: black;
+    padding: 0.5rem 5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    
+    
+}
+.action-btn :active{
+    scale: 0.95;
+
+}
+
+.action-btn:hover{
+    background-color:rgba(219, 165, 167, 0.457);
+}
+
+.text-frame {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .text-frame {
+    width: 80%; /* Adjust as needed */
+  }
+}
+
+.text-frame p {
+ 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(85, 60, 108);
+  font-size:x-large;
+  text-align: center;
+  
+}
+
+em {
+color:rgb(221, 140, 143);
+}

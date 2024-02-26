@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authetification</title>
+     <!-- Lien vers le fichier CSS pour les styles -->
+    <link rel="stylesheet" href="authentification.css">
+     <!-- Lien vers Font Awesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/4fc90babdb.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+
+        <!-- Formulaire de connexion -->
+        <div class="form-box">
+
+             <!-- Titre du formulaire -->
+            <h1 id="title">Se connecter</h1>
+            <form >
+
+                <div class="input-group">
+                      <!-- Champ pour le nom d'utilisateur -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-user" style="color: #B197FC;"></i>
+                        <input type="text" placeholder="Nom d'utilisateur">
+                    </div>
+                     <!-- Champ pour le mot de passe -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-key" style="color: #B197FC;"></i>
+                        <input type="password" placeholder="Mot de passe">
+                    </div>
+                    <!-- Champ pour la confirmation du mot de passe -->
+                    <div class="input-field" id="confirmPassword" style="display: none;">             
+                        <input type="password" id="confirmPassword" placeholder="Confirmation de mot de passe">
+                    </div>
+                </div>
+
+                 <!-- Boutons d'action -->
+                <div class="btn-field" >
+                    <!-- Bouton pour créer un compte -->
+                    <button type="button" id="creerCompte">Créer un compte</button>
+                    <!-- Bouton pour se connecter -->
+                    <button type="button" id="Connection" class="disable">Se connecter</button>
+
+                    <button type="button" id="allez" >Allons-y</button>
+                </div>
+
+            </form> 
+
+        </div>
+
+    </div>
+      <!-- Script JavaScript pour la fonctionnalité de basculement -->
+    <script src="authentification.js"> </script>
+
+</body>
+</html>
